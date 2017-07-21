@@ -26,8 +26,8 @@ group :jekyll_plugins do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-condition :platforms => ['mingw', 'mswin', 'x64_mingw', 'jruby'] do
-   gem 'tzinfo-data'
-end
+#condition :platforms => ['mingw', 'mswin', 'x64_mingw', 'jruby'] do
+#   gem 'tzinfo-data'
+#end
    
 #gem 'wdm', '>= 0.1.0'
