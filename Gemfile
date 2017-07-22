@@ -11,7 +11,7 @@ source "https://rubygems.org"
 gem "jekyll", "3.5.0"
 
 #for travis
-gem "html-proofer"
+#gem "html-proofer"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "jekyll-theme-midnight"
@@ -26,8 +26,7 @@ group :jekyll_plugins do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-#condition :platforms => ['mingw', 'mswin', 'x64_mingw', 'jruby'] do
-#   gem 'tzinfo-data'
-#end
-   
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+#gem 'wdm', '>= 0.1.0' if Gem.win_platform?   
 #gem 'wdm', '>= 0.1.0'
