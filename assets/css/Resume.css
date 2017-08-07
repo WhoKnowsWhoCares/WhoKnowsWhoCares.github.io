@@ -1,0 +1,26 @@
+.cv-col-wrapper {
+    font-size: 15px;
+    color: #828282;
+    margin-left: -15px; }
+
+.cv-col-l {
+    float: left;
+    margin-bottom: 15px;
+    padding-left: 15px; }
+
+.cv-col-r {
+    float: right;
+    margin-bottom: 15px;
+    padding-right: 15px; }
+
+.cv-col-1 {
+    width: -webkit-calc(50% - (30px / 2));
+    width: calc(50% - (30px / 2)); }
+
+.cv-col-2 {
+    width: -webkit-calc(15% - (30px / 2));
+    width: calc(15% - (30px / 2)); }
+
+.cv-col-3 {
+    width: -webkit-calc(35% - (30px / 2));
+    width: calc(35% - (30px / 2)); }
