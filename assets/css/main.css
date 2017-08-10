@@ -27,7 +27,7 @@
 	}
 
 	ol, ul {
-		list-style: none;
+		list-style: disc;
 	}
 
 	blockquote, q {
@@ -1611,7 +1611,7 @@
 	}
 
 	header {
-		margin: 0 0 2em 0;
+		margin: 0 0 1em 0;
 	}
 
 		header > p {
@@ -2186,11 +2186,11 @@
 			}
 
 			#main > section.two {
-				background-color: #f5fafa;
+				background-color: #e8edec;
 			}
 
 			#main > section.three {
-				background-color: #ecf1f1;
+				background-color: #f5fafa;
 			}
 
 			#main > section.four {
