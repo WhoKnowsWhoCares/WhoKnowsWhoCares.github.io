@@ -281,18 +281,19 @@
 								<h2>Связаться</h2>
 							</header>
 							<p>Вы можете оставить сообщение. Я обязательно с Вами свяжусь в ближайшее время.</p>
-							<form method="post" action="http://formspree.io/mail@frants.me">
+							<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdzcbw50POlV4Yo-bXZvxe3sTGn2QXZ7n4EI_xOkXkIXsjmcQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
 								<div class="row">
-									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Имя" /></div>
-									<div class="6u$ 12u$(mobile)"><input type="email" name="_replyto" placeholder="Почта" /></div>
+									<div class="6u 12u$(mobile)"><input type="text" name="entry.1370625141" placeholder="Имя" /></div>
+									<div class="6u$ 12u$(mobile)"><input type="email" name="entry.2092949865" placeholder="Почта" /></div>
 									<div class="12u$">
-										<textarea name="body" placeholder="Сообщение"></textarea>
+										<textarea name="entry.1726289569" placeholder="Сообщение"></textarea>
 									</div>
 									<div class="12u$">
 										<input type="submit" value="Отправить сообщение" />
 									</div>
 								</div>
 							</form>
+							<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 						</div>
 					</section>
 			</div>
@@ -313,5 +314,12 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script type="text/javascript">var submitted=false;</script>
+			<script type="text/javascript">
+				$('#gform').on('submit', function(e) {
+					$('#gform *').fadeOut(2000);
+					$('#gform').prepend('Ваше письмо было отправлено.');
+				});
+			</script>
 	</body>
 </html>
