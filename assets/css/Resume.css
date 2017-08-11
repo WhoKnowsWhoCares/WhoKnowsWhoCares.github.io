@@ -35,7 +35,7 @@ div.title {
     position: relative;
     font-size: 0.8em;
     margin-bottom: 15px;
-    padding-left: 30px;
+    padding-left: 45px;
 }
 
 .cv-col-wrapper {
@@ -62,7 +62,7 @@ div.title {
     width: -webkit-calc(15% - (30px / 2));
     width: calc(15% - (30px / 2)); }
 
-.cv-col-3 {
+.cv-col {
     font-size: 0.8em;
     padding-left: 15px;
     text-align: left;
