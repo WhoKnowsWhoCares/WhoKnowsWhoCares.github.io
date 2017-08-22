@@ -1767,7 +1767,7 @@
 			width: 2em;
 			height: 2em;
 			line-height: 2em;
-			text-align: center;
+			text-align: right;
 			border: 0;
 		}
 
@@ -2020,7 +2020,7 @@
 
 		#header .icons {
 			font-size: 0.8em;
-			text-align: center;
+			text-align: right;
 		}
 
 			#header .icons a {

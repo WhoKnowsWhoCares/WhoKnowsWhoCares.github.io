@@ -114,6 +114,7 @@
 					$('#headerToggle, #header, #main')
 						.css('transition', 'none');
 
+
 	});
 
 })(jQuery);

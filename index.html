@@ -12,6 +12,7 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/Resume.css" />
+		<link rel="stylesheet" href="assets/viewbox/viewbox.css">
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
@@ -21,14 +22,31 @@
 				<div class="top">
 					<!-- Logo -->
 						<div id="logo">
-							<span class="image avatar48"><img src="images/as_avatar.jpg" alt="" /></span>
+							<span class="image avatar48">
+								<!--<a href="#popup"><img src="images/as_avatar.jpg" alt=""></a>-->
+								<a class="image-link">
+									<img src="images/as_avatar.jpg" alt="">
+								</a>
+							</span>
+							<!-- Popup -->
+							<!--
+							<div style="display:none;">
+								<div id="popup" class="image">
+									<img src="images/photo2.jpg" alt="" />
+								</div>
+							</div>-->
 							<h1 id="title">Александр Францев</h1>
 							<p>Финансы, ИТ, Анализ данных</p>
 							<p>Адрес: г.Санкт-Петербург, ул.Жуковского, д.21</p>
 							<p>Телефон: +7(911)720-24-51</p>
-							<p>Почта: <a href="mailto:mail@frants.me">mail@frants.me</a><br>
-								<a href="mailto:as.frantsev@gmail.com">as.frantsev@gmail.com</a></p>
-							<p><a href="./resources/EnglishCV_Alexander_Frantsev_IT&Finance.pdf">Скачать Резюме</a></p>
+							<p>Почта: <a href="mailto:mail@frants.me" target="_blank">mail@frants.me</a><br>
+								<a href="mailto:as.frantsev@gmail.com" target="_blank">as.frantsev@gmail.com</a></p>
+							<br>
+							<ul class="icons">
+								<li><a href="skype:as.frantsev?chat" class="icon fa-skype"><span class="label">Skype</span></a></li>
+								<li><a href="https://www.linkedin.com/in/asfrantsev/" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/WhoKnowsWhoCares" target="_blank" class="icon fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
 						</div>
 					<!-- Nav -->
 						<nav id="nav">
@@ -40,6 +58,7 @@
 								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
 							-->
 							<ul>
+								<li><a href="#home" id="home-link" class="skel-layers-ignoreHref"><span class="icon fa-download">Скачать Резюме</span></a></li>
 								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">О себе</span></a></li>
 								<li><a href="#education" id="education-link" class="skel-layers-ignoreHref"><span class="icon fa-edge">Образование</span></a></li>
 								<li><a href="#work" id="work-link" class="skel-layers-ignoreHref"><span class="icon fa-won">Опыт работы</span></a></li>
@@ -48,28 +67,29 @@
 							</ul>
 						</nav>
 				</div>
-				<div class="bottom">
-					<!-- Social Icons -->
+				<!-- Social Icons -->
+				<!-- <div class="bottom">
 						<ul class="icons">
 							<li><a href="https://www.linkedin.com/in/asfrantsev/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
 							<li><a href="https://github.com/WhoKnowsWhoCares" class="icon fa-github"><span class="label">GitHub</span></a></li>
 							<li><a href="mailto:mail@frants.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
-				</div>
+				</div> -->
 			</div>
 		<!-- Main -->
 			<div id="main">
 				<!-- Title -->
-					<section class="one dark cover">
+					<section id="home" class="one dark cover">
 						<div class="container">
 							<header>
 								<h2 class="alt">Добро пожаловать!</h2>
-								<p>Этот сайт-визитка создан для того, чтобы более детально раскрыть резюме<br>
+								<p>Этот сайт-визитка создан для того, чтобы детальнее раскрыть резюме<br>
 									и ответить на возможно возникшие вопросы.</p>
 							</header>
 							<footer>
-								<a href="./resources/EnglishCV_Alexander_Frantsev_IT&Finance.pdf" class="button scrolly">
-									Скачать Резюме</a>
+                                <p>Скачать Резюме:</p>
+								<a href="./resources/АлександрФранцев_Финансы&ИТ_РезюмеРус.pdf" target="_blank" class="button scrolly"> на Русском</a>
+                                <a href="./resources/AlexanderFrantsev_Finance&IT_ResumeEng.pdf" target="_blank" class="button scrolly"> in English</a>
 							</footer>
 						</div>
 					</section>
@@ -80,10 +100,10 @@
 								<h2>О себе</h2>
 							</header>
 							<div class="cv-col">
-								<p>Окончил специалитет мат-мех СПбГУ - Прикладная математика и информатика, магистратуру ЕУСПб - Финансы.<br>
+								<p>Окончил специалитет мат-мех СПбГУ по специальности Прикладная математика и информатика, магистратуру ЕУСПб - Финансы.<br>
 									В свободное время программирую на Python, R, Java, занимаюсь сторонними проектами.<br>
 									Интересуюсь портфельной теорией, риск менеджментом, анализом данных.<br>
-									Хобби: с удовольствием решаю математические задачки, футбол, бег, самообразование.</p>
+									Хобби: решение математических задачек, футбол, бег, саморазвитие.</p>
 							</div>
 						</div>
 					</section>
@@ -148,7 +168,7 @@
 							</header>
 							<div class="content">
 								<div class="title">
-									<p class="col-name">Европейский Университет в Санкт-Петербурге, Факультет Экономики,
+									<p class="col-name">Европейский Университет в Санкт-Петербурге, факультет Экономики,
 										направление Финансы</p>
 									<p class="col-year">2015-2017</p>
 								</div>
@@ -159,7 +179,7 @@
 							</div>
 							<div class="content">
 								<div class="title">
-									<p class="col-name">СПбГУ, Математико-Механический факультет,
+									<p class="col-name">СПбГУ, Математико-Механический факультет, специальность: Прикладная математика и информатика,
 										кафедра Прикладной Кибернетики</p>
 									<p class="col-year">2008-2014</p>
 								</div>
@@ -243,14 +263,26 @@
 						</header>
 						<div class="content">
 							<div class="title">
+								<p class="col-name">Исследовательские проекты на базе Европейского Университета в Санкт-Петербурге</p>
+								<p class="col-year">2015-2017</p>
+							</div>
+							<ul class="col-desc">
+								<li><i>Обязанности</i>: Автоматизированный сбор информации с тематических сайтов с использованием языка Python (Web scraping);</li>
+								<li>Применение методов машинного обучения для предсказания поведения цены акций
+									в зависимости от дневных новостей (Logit, Decision Tree, Random Forest, NB classifier, AdaBoost);</li>
+								<li>Изучение кривых бескупонной доходности по государственным ценным бумагам
+									с использованием языка R (Модель Нельсона-Сигеля, МНК)</li>
+							</ul>
+						</div>
+						<div class="content">
+							<div class="title">
 								<p class="col-name">Ubiq Mobile, .NET developer</p>
 								<p class="col-year">2014-2015</p>
 							</div>
 							<ul class="col-desc">
-								<li>Ubiq Mobile - компания, занимающаяся разработкой кросс-платформенных мобильных приложений для бизнеса</li>
 								<li><i>Обязанности</i>: Разработка сервисов на стороне сервера, содействие в разработке ASP.NET MVC проекта</li>
 								<li><i>Результаты</i>: Создан прототип сервиса для корпоративной парковочной системы,
-									осуществлен переход сервисов на использование SQL Server'а с использованием Entity Framework</li>
+									осуществлен переход сервисов на SQL Server с использованием Entity Framework</li>
 							</ul>
 						</div>
 						<div class="content">
@@ -259,43 +291,10 @@
 								<p class="col-year">2013-2014</p>
 							</div>
 							<ul class="col-desc">
-								<li>Ubiq Mobile - компания, занимающаяся разработкой кросс-платформенных мобильных приложений для бизнеса</li>
-								<li><i>Обязанности</i>: Разработка J2ME клиента с клиент-серверным взаимодействием по средствам
+								<li><i>Обязанности</i>: Разработка J2ME приложения с клиент-серверным взаимодействием по средствам
 									собственного протокола</li>
 								<li><i>Результаты</i>: Создан легковесный универсальный клиент, поддерживающий карты,
-									гео-локацию и ssl соединения через 3G сети</li>
-							</ul>
-						</div>
-						<header>
-							<h2>Другие проекты</h2>
-						</header>
-						<div class="content">
-							<div class="title">
-								<p class="col-name">Исследовательский проект </p>
-								<p class="col-year">2017</p>
-							</div>
-							<ul class="col-desc">
-								<li>Сбор информации с тематических сайтов с использованием языка Python (Web scraping)</li>
-							</ul>
-						</div>
-						<div class="content">
-							<div class="title">
-								<p class="col-name">Эконометрический проект </p>
-								<p class="col-year">2017</p>
-							</div>
-							<ul class="col-desc">
-								<li>Применение методов машинного обучения для предсказания поведения цены акций
-									в зависимости от дневных новостей (Logit, Decision Tree, Random Forest, NB classifier, AdaBoost).</li>
-							</ul>
-						</div>
-						<div class="content">
-							<div class="title">
-								<p class="col-name">Статистический проект</p>
-								<p class="col-year">2016</p>
-							</div>
-							<ul class="col-desc">
-								<li>Изучение кривых бескупонной доходности по государственным ценным бумагам
-									с использованием языка R (Модель Нельсона-Сигеля, МНК)</li>
+									геолокацию и ssl соединения через 3G сети</li>
 							</ul>
 						</div>
 						<div class="content">
@@ -305,6 +304,8 @@
 							</div>
 							<ul class="col-desc">
 								<li><i>Награды</i>: Грант на развитие от U.S. Civilian Research & Development Foundation</li>
+								<li><i>Результаты</i>: Развитие до полноценного комерческого продукта и компании Ubiq Mobile,
+									занимающейся разработкой кросс-платформенных мобильных приложений для бизнеса</li>
 							</ul>
 						</div>
 					</div>
@@ -317,7 +318,7 @@
 						</header>
 						<div class="cv-col">
 							<p>Знаком с основами администрирования Linux, опытный пользователь Windows и MS Office<br>
-								Программирование на Python, R, Java, C#, использование HTML, CSS, XML, JS и др.<br>
+								Программирование на Python, R, Java, C#, использование HTML, CSS, XML, JS, SQL и др.<br>
 								Инструменты командной разработки, такие как Subversion, Git, Readmine<br>
 								Знание основных алгоритмов, паттернов и методологий разработки<br>
 								Опыт работы с базами данных SQLight, SQL Server<br>
@@ -413,5 +414,25 @@
 					$('#gform').prepend('Ваше письмо было отправлено.');
 				});
 			</script>
+			<script src="assets/viewbox/jquery.viewbox.min.js"></script>
+			<!--<script>
+                $(function(){
+                    var vb = $('#popup').viewbox({
+                        setTitle: false,
+                        margin: 20,
+                        resizeDuration: 300,
+                        openDuration: 200,
+                        closeDuration: 200,
+                        closeButton: true,
+                        navButtons: true,
+                        closeOnSideClick: true,
+                        nextOnContentClick: true,
+                        useGestures: true
+                    });
+                    $('.image-link').click(function(){
+                        vb.trigger('viewbox.open');
+                    });
+                });
+			</script>-->
 	</body>
 </html>
